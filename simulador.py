@@ -40,17 +40,12 @@ def RecuperaDados():
         tela.label_3.setText('Infelizmente não podemos aprovar seu financiamento,\ntente novamente daqui a 3 meses!')
         print('\033[31mInfelizmente não podemos aprovar seu financiamento, tente novamente daqui a 3 meses!\033[m\n')
 
-    # limpa entrada de dados
-    tela.lineEdit.setText('')
-    tela.lineEdit_2.setText('')
-    tela.lineEdit_3.setText('')
-
-
+  
 # condição para imprimir tabela
 def QuerImprimir():
-    tela_2.show()
-    '''
     RecuperaDados()
+    tela_2.show()
+    
     # entrada de dados
     saldo_devedor = float(tela.lineEdit.text())
     anos = int(tela.lineEdit_3.text())
@@ -59,7 +54,7 @@ def QuerImprimir():
     juros_anos = (anos * juros_base)
     meses = (anos * 12)
     juros_mes = (juros_anos / meses)
-    # tabela de amortização
+    # tabela de amortização saida terminal
     amortizacao = saldo_devedor / meses
     print('\033[34mSaldo devedor\033[m, \033[35mJuros\033[m, \033[35mAmortização\033[m, \033[36mParcela Mês\033[m\n')
     for parcela in range(meses):
@@ -67,7 +62,7 @@ def QuerImprimir():
         juros_pago = (saldo_devedor * juros_mes)
         prestacao = (amortizacao + juros_pago)
         print(parcela, '\033[34m{:.2f}\033[m / \033[35m{:.2f}\033[m / \033[35m{:.2f}\033[m / \033[36m{:.2f}\033[m'.format(saldo_devedor, juros_pago, amortizacao, prestacao))
-        '''
+    # tabela de amortização saida inteface grafica
     dados = []
     dados.append(('Saldo devedor', 'Juros Mês', 'Amortização', 'Prestação'))
     # tabela tela 2
@@ -80,6 +75,10 @@ def QuerImprimir():
             tela_2.tableWidget.setItem(linha, coluna, ceta)
             coluna += 1
         linha += 1
+    # limpa entrada de dados
+    tela.lineEdit.setText('')
+    tela.lineEdit_2.setText('')
+    tela.lineEdit_3.setText('')
 
 
 app = QtWidgets.QApplication([])
