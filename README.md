@@ -2,7 +2,7 @@
 ## Aplicação em Python para simular financiamento de ímovel.
 Esta aplicação simples é resultado dos meus estudos em Python. É a primeira versão e está passível de melhorias e mudanças, mas apesar de simples estou muito feliz em poder compartilhar.
 
-![Video Simulador](video_financiamento.gif)
+![Video Simulador](https://github.com/maroberto/simulador_financiamento/blob/master/imagens/video_financiamento.gif)
 ### Como funciona:
 Este aplicativo faz uma simualação com base no valor do ímovel acrescido de juros (*7,99 ao ano*) e faz três verificações.
 1. Na primeira verifica a possibilidade de pagamento com até **30%** da renda. Se verdadeiro aprova.
@@ -33,4 +33,4 @@ Este aplicativo faz uma simualação com base no valor do ímovel acrescido de j
 ## Autores: 
 **Marcos Roberto**
 ## Licença:
-[GNU General Public License v3.0]()
+[GNU General Public License v3.0](https://github.com/maroberto/simulador_financiamento/blob/master/LICENSE)
