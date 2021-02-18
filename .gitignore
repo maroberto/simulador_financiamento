@@ -117,6 +117,7 @@ Espaco de trabalho.code-workspace
 pyqt
 .idea/
 financ
+.bash.save
 
 # Spyder project settings
 .spyderproject
