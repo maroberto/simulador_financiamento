@@ -118,6 +118,7 @@ pyqt
 .idea/
 financ
 .bash.save
+.vscode
 
 # Spyder project settings
 .spyderproject
